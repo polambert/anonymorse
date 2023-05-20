@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>anonymorse</title>
+<script src="/assets/jquery.js"></script>
+<script src="/assets/anonymorse/main.js"></script>
+<link rel="stylesheet" href="/assets/anonymorse/style.css">
+</head>
+
+
+<body onload="onload()">
+	<h1>anonymorse</h1>
+	<h4>Talk to anyone across the world, if you know how!</h4>
+	<h5 id="tooltip">Press space to transmit, ESC to disconnect and rejoin. A beep will play while transmitting and/or receiving.</h5>
+	<br>
+	<h3 id="status">Waiting for a connection... ({{ .AmountOnline }} online)</h3>
+	<h3 id="send">SEND</h3>
+	<h3 id="recv">RECV</h3>
+
+	<canvas id="canvas">
+		Your browser does not support canvas element.
+	</canvas>
+	<br>
+	<br>
+	<button id="esc-button">ESC</button>
+</body>
+</html>
